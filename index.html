@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css"
+        integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <i class="fa-light fa-circle-heart"></i>
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            $(".cancel-show-img").click(function(){
+                $(".container-show-img").css('display','none');
+            })
+            $(".view-image").click(function(){
+                $(".container-show-img").css('display','block');
+            })
+            $(".inf-about-job").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#i-about-job").offset().top - 150
+                }, 100);
+            });
+            $(".inf-about-customer").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#i-about-customer").offset().top - 150
+                }, 100);
+            });
+            $(".inf-about-ask").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#i-about-ask").offset().top - 150
+                }, 100);
+            });
+            $(".inf-about-me").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#i-about-me").offset().top - 150
+                }, 100);
+            });
+            $(".inf-about-vote").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#i-about-vote").offset().top - 150
+                }, 100);
+            });
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 70) {
+                    $(".sub-nav").css('display', 'flex');
+                } else {
+                    $(".sub-nav").css('display', 'none');
+                }
+                console.log(scroll);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- navigation -->
+    <section id="navigation">
+        <div class="contain">
+            <div class="l-nav">
+                <i class="fa-solid fa-bars"></i>
+                <img src="./img/coding.png" id="logo" alt="">
+                <div class="box-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+            </div>
+            <div class="r-nav">
+                <a href="">USD($)</a>
+                <button>Tham gia ngay</button>
+                <a href="">Đăng nhập</a>
+            </div>
+            <div class="sub-nav">
+                <div class="s-nav-l">
+                    <a href="javascript:value(0)" id="" class="inf-about-job">Thông tin về job</a>
+                    <a href="javascript:value(0)" class="inf-about-customer">Khách hàng nói gì</a>
+                    <a href="javascript:value(0)" class="inf-about-ask">Câu hỏi thường gặp</a>
+                    <a href="javascript:value(0)" class="inf-about-me">Về tôi</a>
+                    <a href="javascript:value(0)" class="inf-about-vote">Đánh giá</a>
+                </div>
+                <div class="s-nav-r">
+                    <div class="item">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <p>0</p>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+
+                        <p>Chia sẻ</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner -->
+    <section id="banner">
+        <video width="400" controls>
+            <source src="mov_bbb.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML video.
+        </video>
+        <div class="contain-img">
+            <div class="tab-chooses">
+                <div class="choose">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <p>0</p>
+                </div>
+                <div class="choose">
+                    <i class="fa fa-share" aria-hidden="true"></i>
+
+                    <p>Chia sẻ</p>
+                </div>
+            </div>
+            <a href="javascript:value(0)" class="view-image">
+                Xem ảnh
+            </a>
+            <div class="img">
+                <img src="./img/relativebanner.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="./img/relativebanner.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- reviews customer -->
+    <section id="deatail-job">
+        <div class="inf-job">
+            <div class="title-job">
+                <div class="inf">
+                    <span>VIDEO $ ÂM NHẠC > CHỈNH SỬA VIDEO</span>
+                    <b>Tôi có thể chính sửa video, ảnh giúp bạn</b>
+                    <p>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <div class="contain-user">
+                    <img src="./img/coding.png" alt="">
+                    <b>0868617603</b>
+                    <p>Người mới</p>
+                </div>
+            </div>
+            <div class="about-job">
+                <b id="i-about-job">Thông tin về job</b></br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eaque accusamus, dolore eius nemo
+                    voluptatem unde suscipit placeat dolor consequuntur quidem laborum perferendis eum sapiente repellat
+                    qui pariatur! Sed, eaque.</p></br>
+
+                <b id="i-about-customer">Khách hàng nói gì</b></br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eaque accusamus, dolore eius nemo
+                    voluptatem unde suscipit placeat dolor consequuntur quidem laborum perferendis eum sapiente repellat
+                    qui pariatur! Sed, eaque.</p></br>
+                <b id="i-about-ask">Khách hàng nói gì</b></br>
+                <b id="i-about-me">Về tôi</b>
+                <div class="about-me">
+                    <div class="skill-me">
+                        <div class="inf-me">
+                            <img src="./img/coding.png" alt="">
+                            <div class="contact">
+                                <b>0868617603</b>
+                                <p>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    0(0)
+                                </p>
+                            </div>
+
+                        </div>
+                        <a href="">Xem thông tin của tôi</a>
+                        <b>Kĩ năng</b>
+                        <p>Editer</p>
+                    </div>
+                    <div class="relative-action">
+                        <p>Từ</p>
+                        <b>Việt Nam</b>
+                        <p>Ngôn ngữ</p>
+                        <b>Tiếng Anh</b>
+                        <p>Thành viên từ</p>
+                        <b>18-10-2002</b>
+                        <p>Giao dịch gần nhất</p>
+                        <b>N/A</b>
+                    </div>
+
+                </div>
+                <b id="i-about-vote">Đánh giá</b></br>
+                <div class="vote">
+                    <div class="sum-vote">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <p>0</p>
+                        <b>0 Đánh giá</b>
+                    </div>
+                    <div class="detail-vote">
+                        <div class="thing-vote">
+                            <p>Độ phản hồi</p>
+                            <span class="rating">
+
+                            </span>
+                            <p>0.0</p>
+                        </div>
+                        <div class="thing-vote">
+                            <p>Giao tiếp khách hàng</p>
+                            <span class="rating">
+
+                            </span>
+                            <p>0.0</p>
+                        </div>
+                        <div class="thing-vote">
+                            <p>Làm đúng theo yêu cầu</p>
+                            <span class="rating">
+
+                            </span>
+                            <p>0.0</p>
+                        </div>
+                        <div class="thing-vote">
+                            <p>Giao hàng nhanh chống</p>
+                            <span class="rating">
+
+                            </span>
+                            <p>0.0</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="form-bought">
+            <div class="f-stiky">
+                <div class="wrapper">
+                    <header>Lựa chọn</header>
+                    <input type="radio" name="slider" checked id="basic">
+                    <input type="radio" name="slider" id="pro">
+                    <input type="radio" name="slider" id="premium">
+                    <nav>
+                        <label for="basic" class="basic"><i class="fas fa-home"></i>BASIC</label>
+                        <label for="pro" class="pro"><i class="fas fa-blog"></i>Blog</label>
+                        <label for="premium" class="premium"><i class="fas fa-code"></i>Code</label>
+                    </nav>
+                    <section>
+                        <div class="content content-1">
+                            <div class="title">This is a Home content</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aspernatur nobis provident
+                                dolores
+                                molestias quia quisquam laborum, inventore quis, distinctioa, fugit repudiandae delectus
+                                sunt ipsam!
+                                Odio illo at quia doloremque fugit iops, asperiores? Consectetur esse officia labore
+                                voluptatum
+                                blanditiis molestias dic voluptas est, minima unde sequi, praesentium dicta suscipit
+                                quisquam iure
+                                sed, nemo.</p>
+                        </div>
+                        <div class="content content-2">
+                            <div class="title">This is a Blog content</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit amet. Possimus doloris nesciunt
+                                mollitia
+                                culpa sint itaque, vitae praesentium assumenda suscipit fugit doloremque adipisci
+                                doloribus, sequi
+                                facere itaque cumque accusamus, quam molestias sed provident quibusdam nam deleniti.
+                                Autem eaque aut
+                                impedit eo nobis quia, eos sequi tempore! Facere ex repellendus, laboriosam
+                                perferendise. Enim quis
+                                illo harum, exercitationem nam totam fugit omnis natus quam totam, repudiandae dolor
+                                laborum!
+                                Commodi?</p>
+                        </div>
+                        <div class="content content-3">
+                            <div class="title">This is a Code content</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, debitis nesciunt!
+                                Consectetur
+                                officiis, libero nobis dolorem pariatur quisquam temporibus. Labore quaerat neque facere
+                                itaque
+                                laudantium odit veniam consectetur numquam delectus aspernatur, perferendis repellat
+                                illo sequi
+                                excepturi quos ipsam aliquid est consequuntur.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- slider -->
+    <section id="slider" class="swiper mySwiper">
+        <h3>Đề xuất gần đây</h3>
+        <div class="contain-slider swiper-wrapper">
+            <div class="slider swiper-slide">
+                <div class="content-img">
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="./img/relativebanner.jpg" class="img-content" alt="">
+                </div>
+                <div class="content-inf">
+                    <img src="./img/relativebanner.jpg" alt="">
+                    <div class="inf">
+                        <h5>300.000 đ </h5>
+                        <p>Người mới</p>
+                        <b>Chanh NCA</b>
+                        <span>
+                            Tôi sẽ giúp bạn làm banner, coder, design,..
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider swiper-slide">
+                <div class="content-img">
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="./img/relativebanner.jpg" class="img-content" alt="">
+                </div>
+                <div class="content-inf">
+                    <img src="./img/relativebanner.jpg" alt="">
+                    <div class="inf">
+                        <h5>300.000 đ </h5>
+                        <p>Người mới</p>
+                        <b>Chanh NCA</b>
+                        <span>
+                            Tôi sẽ giúp bạn làm banner, coder, design,..
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider swiper-slide">
+                <div class="content-img">
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="./img/relativebanner.jpg" class="img-content" alt="">
+                </div>
+                <div class="content-inf">
+                    <img src="./img/relativebanner.jpg" alt="">
+                    <div class="inf">
+                        <h5>300.000 đ </h5>
+                        <p>Người mới</p>
+                        <b>Chanh NCA</b>
+                        <span>
+                            Tôi sẽ giúp bạn làm banner, coder, design,..
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="slider swiper-slide">
+                <div class="content-img">
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="./img/relativebanner.jpg" class="img-content" alt="">
+                </div>
+                <div class="content-inf">
+                    <img src="./img/relativebanner.jpg" alt="">
+                    <div class="inf">
+                        <h5>300.000 đ </h5>
+                        <p>Người mới</p>
+                        <b>Chanh NCA</b>
+                        <span>
+                            Tôi sẽ giúp bạn làm banner, coder, design,..
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- footer start -->
+    <section id="footer">
+        <footer>
+            <div class="ft-inf p1">
+                <div class="contain-logo">
+                    <img src="./img/coding.png" alt="">
+                    <h2>MURAD logo</h2>
+                </div>
+                <b>Lorem ipsum dolor sit amet</b>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur saepe magni at nisi tempora
+                </p>
+            </div>
+            <span class="border"></span>
+            <div class="ft-inf p2">
+                <b>Danh mục</b>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+            </div>
+            <div class="ft-inf p2">
+                <b>Danh mục</b>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+            </div>
+            <div class="ft-inf p2">
+                <b>Danh mục</b>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+                <a href="">danh mục 1</a>
+            </div>
+            <span class="border">
+            </span>
+            <div class="ft-inf p3">
+                <b>Tìm thông tin</b>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <form class="form-footer">
+                    <input type="text" placeholder="Tìm kiếm ở đây..." name="search">
+                    <input type="button" value="gửi">
+                </form>
+                <p>Thanks you</p>
+            </div>
+        </footer>
+        <div class="conpany">
+            <div class="author">
+                <p>Create by @Hduong </br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem,
+                    necessitatibus fugit mollitia maxime similique dignissimos praesentium atque sint illo reprehenderit
+                </p>
+            </div>
+            <div class="applycation">
+                <p><i class="fa-brands fa-apple"></i> IOS</p>
+                <p><i class="fa-brands fa-android"></i> ANDROID</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+    <!-- view all img -->
+    <div class="container-show-img">
+        <div class="swiper mySwiper-show-img">
+            <a href="javascript:value(0)" class="cancel-show-img">Huy Bo</a>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="contain-img">
+                        <img src="./img/relativebanner.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="contain-img">
+                        <img src="./img/relativebanner.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="swiper-pagination"></div>
+        </div>
+       
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper-show-img", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 3,
+                },
+                950: {
+                    slidesPerView: 4,
+                }
+
+            }
+        });
+    </script>
+</body>
+
+</html>
